@@ -1,12 +1,10 @@
 import os
 import json
 
-# Python does not search PATH for a module's DLLs, so point it at OpenSSL before importing
-os.add_dll_directory(r"C:\Program Files\OpenSSL-Win64\bin")
 
 import netcp
 
-response = netcp.request("http://localhost:3000/api/v1/product")
+response = netcp.request("http://github.com")
 
 if response["ok"]:
     print("Status:", response["status"])
