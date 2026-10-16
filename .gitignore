@@ -1,0 +1,12 @@
+.venv
+.vscode
+
+# Build output (rebuild with build.bat)
+*.pyd
+*.exe
+*.o
+*.obj
+
+# Python cache
+__pycache__/
+*.pyc
